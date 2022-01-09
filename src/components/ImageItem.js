@@ -9,7 +9,7 @@ const ImageItem = (props) => { // Receives the picture of the day boject through
 
     // Copy the current item's link to the clipboard
     const copyLink = () => {
-        const shareURL = new URL(window.location.host);
+        const shareURL = new URL(window.location.href);
         shareURL.searchParams.set('media', props.image.date);
         navigator.clipboard.writeText(shareURL);
         // Show the "link copied" toast
