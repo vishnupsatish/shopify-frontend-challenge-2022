@@ -25,6 +25,7 @@ const App = () => {
 
             // Load data from the API and set state to the result
             getImages(params).then((data) => {
+                console.log(data)
                 if (single) {
                     setImages([data]);
                 } else {
