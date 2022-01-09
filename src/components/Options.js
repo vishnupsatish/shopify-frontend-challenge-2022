@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Layout, Card, RangeSlider } from '@shopify/polaris';
+import React, { useState } from 'react';
+import { Card, RangeSlider } from '@shopify/polaris';
 
-const Options = (props) => {
+
+// Displays the options card
+const Options = (props) => { // Receives the 'loadImages(params, single?)' function to call when the user requests to load images
     const [count, setCount] = useState(10);
 
     return (

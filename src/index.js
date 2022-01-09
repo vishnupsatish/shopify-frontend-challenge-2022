@@ -9,7 +9,7 @@ import App from './App';
 ReactDOM.render(
     <AppProvider i18n={enTranslations}>
         <Frame>
-            <Page title="Space 4 Everyone!" subtitle="All media is from the NASA APOD API">
+            <Page title="Space 4 Everyone!" subtitle="All pieces of media are from the NASA APOD API.">
                 <App />
             </Page>
         </Frame>

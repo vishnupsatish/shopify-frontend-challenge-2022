@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Stack, SkeletonBodyText } from '@shopify/polaris'
+import React from 'react';
+import { Stack } from '@shopify/polaris'
 import ImageItem from '../components/ImageItem';
-import { getImages } from '../Utils'
 
 
-
+// Displays a list of images
 const ImageList = (props) => {
-
-
     return (
         <Stack vertical={true}>
             {props.images.map((image, _) => (
