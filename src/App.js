@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layout, SkeletonBodyText } from '@shopify/polaris';
+import { Layout, SkeletonBodyText, Stack, Card } from '@shopify/polaris';
 import ImageList from './components/ImageList'
 import Options from './components/Options'
 import { getImages } from './Utils'
@@ -54,7 +54,12 @@ const App = () => {
 
             </Layout.Section>
             <Layout.Section secondary>
-                <Options loadImages={loadImages} />
+                <Stack vertical={true}>\
+                    <Options loadImages={loadImages} />
+                    <Card sectioned>
+                        <p>All pieces of media are from the NASA APOD API.</p>
+                    </Card>
+                </Stack>
             </Layout.Section>
         </Layout>
 
